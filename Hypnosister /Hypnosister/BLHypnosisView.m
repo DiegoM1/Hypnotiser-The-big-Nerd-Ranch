@@ -49,7 +49,7 @@
     
   UIBezierPath *path = [[UIBezierPath alloc]init];//instancio un bezierpath para crear un gráfico.
     float maxRadius = hypot(bounds.size.width, bounds.size.height) /2.0;
-  //Hypotenusa para hallár el maximo radio
+  //Hypotenusa para hallar el maximo radio
     
     
     for ( float currentRadius = maxRadius; currentRadius > 0;currentRadius -= 20){//reducira 20 del radio màximo

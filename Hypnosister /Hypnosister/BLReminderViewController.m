@@ -34,7 +34,6 @@
                           completionHandler:^(BOOL granted, NSError * _Nullable error) {
                               if (!error) {
                                   NSLog(@"request authorization succeeded!");
-                             
                               }
                           }];
     UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc] init];
@@ -49,9 +48,7 @@
     
     NSDateComponents *components = [calendar components:(NSCalendarUnitHour | NSCalendarUnitMinute) fromDate:date];
     
-    NSInteger hour = [components hour];
-    NSInteger minute = [components minute];
-    
+  
     
     
     UNCalendarNotificationTrigger *trigger =  [UNCalendarNotificationTrigger triggerWithDateMatchingComponents:components repeats:  true];

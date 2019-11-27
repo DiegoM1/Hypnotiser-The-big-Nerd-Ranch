@@ -11,6 +11,7 @@
 		7910D6E0238C35B600FBD80C /* BLReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7910D6DE238C35B600FBD80C /* BLReminderViewController.xib */; };
 		7910D6E3238D7BF200FBD80C /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7910D6E2238D7BF200FBD80C /* QuizViewController.m */; };
 		7910D6E5238D7BF600FBD80C /* QuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7910D6E4238D7BF600FBD80C /* QuizViewController.xib */; };
+		79B17467238EB3BD00C873FE /* BLHypnosisSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B17466238EB3BD00C873FE /* BLHypnosisSegmentedControl.m */; };
 		79F46EC023858EF70085271F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F46EBF23858EF70085271F /* AppDelegate.m */; };
 		79F46EC323858EF70085271F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F46EC223858EF70085271F /* ViewController.m */; };
 		79F46EC623858EF70085271F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79F46EC423858EF70085271F /* Main.storyboard */; };
@@ -38,6 +39,8 @@
 		7910D6E1238D7BED00FBD80C /* QuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizViewController.h; sourceTree = "<group>"; };
 		7910D6E2238D7BF200FBD80C /* QuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizViewController.m; sourceTree = "<group>"; };
 		7910D6E4238D7BF600FBD80C /* QuizViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuizViewController.xib; sourceTree = "<group>"; };
+		79B17465238EB3BD00C873FE /* BLHypnosisSegmentedControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLHypnosisSegmentedControl.h; sourceTree = "<group>"; };
+		79B17466238EB3BD00C873FE /* BLHypnosisSegmentedControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLHypnosisSegmentedControl.m; sourceTree = "<group>"; };
 		79F46EBB23858EF70085271F /* Hypnosister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hypnosister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F46EBE23858EF70085271F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		79F46EBF23858EF70085271F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -111,6 +114,8 @@
 				7910D6DC238C35B600FBD80C /* BLReminderViewController.h */,
 				7910D6DD238C35B600FBD80C /* BLReminderViewController.m */,
 				7910D6DE238C35B600FBD80C /* BLReminderViewController.xib */,
+				79B17465238EB3BD00C873FE /* BLHypnosisSegmentedControl.h */,
+				79B17466238EB3BD00C873FE /* BLHypnosisSegmentedControl.m */,
 			);
 			path = Hypnosister;
 			sourceTree = "<group>";
@@ -227,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79B17467238EB3BD00C873FE /* BLHypnosisSegmentedControl.m in Sources */,
 				7910D6DF238C35B600FBD80C /* BLReminderViewController.m in Sources */,
 				79F46EC323858EF70085271F /* ViewController.m in Sources */,
 				79F46EE4238592100085271F /* BLHypnosisView.m in Sources */,

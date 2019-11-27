@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "BLHypnosisView.h"
-@interface ViewController : UIViewController
 
+@interface ViewController : UIViewController
 @property  BLHypnosisView *ui;
 @property  BLHypnosisView *ui2;
-
+-(void)drawHypnoticMessage:(NSString *)message;
 -(instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil;
 -(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView;
 @end
