@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "BLHypnosisView.h"
 #import "BLHypnosisSegmentedControl.h"
-
+#import "BLLogicTextfield.h"
 @interface ViewController () <UIScrollViewDelegate, UITextFieldDelegate>
 @property (nonatomic)UIScrollView *scrollView;
 @property (nonatomic) UIView *wrapper;
@@ -61,12 +61,13 @@
     [self.view addSubview:self.scrollView];
     self.wrapper = [[UIView alloc]initWithFrame:bigRect];
     [self.scrollView addSubview:self.wrapper];
-    ;CGRect textFieldRect = CGRectMake(self.view.center.x-120, 100, 240, 30);
+    
+    CGRect textFieldRect = CGRectMake(self.view.center.x-120, 100, 240, 30);
     
     UITextField *textField = [[UITextField alloc]initWithFrame:textFieldRect];
     textField.clearButtonMode = 1;
     textField.borderStyle = UITextBorderStyleRoundedRect;
-    
+
     textField.placeholder = @"Hypnotize me";
     textField.returnKeyType = UIReturnKeyDone;
     textField.delegate = self;
@@ -115,22 +116,8 @@
 
 -(void)drawHypnoticMessage:(NSString *)message{
     for(int i = 0;i < 20;i++){
-        UILabel *messageLabel = [[UILabel alloc]init];
-        messageLabel.backgroundColor = [UIColor clearColor];
-        messageLabel.textColor = [UIColor blackColor];
-        UIFont *helvFont = [UIFont fontWithName:@"HelveticaNeue" size:30.0];
-        [messageLabel setFont:helvFont];
-        messageLabel.text = message;
-        [messageLabel sizeToFit];
-        int width = (int)(self.view.bounds.size.width - messageLabel.bounds.size.width);
-        int x = arc4random() % width;
-        int height = (int)(self.view.bounds.size.height - messageLabel.bounds.size.height);
-        int y = arc4random() % height;
-        CGRect frame = messageLabel.frame;
-        frame.origin = CGPointMake(x, y);
-        messageLabel.frame = frame;
-        
-        [self.view addSubview:messageLabel];
+ 
+        [self.view addSubview:[BLLogicTextfield createLabelforView:self.view withMessage:message]];
         
     }
 }
